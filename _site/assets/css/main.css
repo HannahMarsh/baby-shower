@@ -1,17 +1,5 @@
 @charset "UTF-8";
-/* ==========================================================================
-   Mint skin
-   ========================================================================== */
-/* Colors */
-.page__footer {
-  color: #fff !important;
-}
-
-.page__footer-follow .social-icons i,
-.page__footer-follow .social-icons .svg-inline--fa {
-  color: inherit;
-}
-
+/* Override theme variables BEFORE importing theme */
 /* Copyright comment */
 /*!
  * Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
@@ -59,6 +47,7 @@
    ========================================================================== */
 /* Mixins and functions */
 /* Magnific Popup CSS */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap");
 .mfp-counter {
   font-family: Georgia, Times, serif;
 }
@@ -523,9 +512,9 @@ img.mfp-img {
    ========================================================================== */
 button:focus, a:focus {
   /* Default*/
-  outline: thin dotted #11999e;
+  outline: thin dotted #d46a9e;
   /* Webkit*/
-  outline: 5px auto #11999e;
+  outline: 5px auto #d46a9e;
   outline-offset: -2px;
 }
 
@@ -568,7 +557,7 @@ button:focus, a:focus {
 html {
   /* apply a natural box layout model to all elements */
   box-sizing: border-box;
-  background-color: #f3f6f6;
+  background-color: #faf8f6;
   font-size: 16px;
 }
 @media (min-width: 48em) {
@@ -635,7 +624,7 @@ audio:not([controls]) {
 }
 
 a {
-  color: #11999e;
+  color: #d46a9e;
 }
 
 /* Apply focus state */
@@ -748,8 +737,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: #40514e;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  color: #3d4144;
+  font-family: "Glacial Indifference", sans-serif;
   line-height: 1.5;
 }
 body.overflow--hidden {
@@ -765,7 +754,7 @@ h5,
 h6 {
   margin: 2em 0 0.5em;
   line-height: 1.2;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
 }
 
@@ -806,7 +795,7 @@ p {
 u,
 ins {
   text-decoration: none;
-  border-bottom: 1px solid #40514e;
+  border-bottom: 1px solid #3d4144;
 }
 u a,
 ins a {
@@ -836,7 +825,7 @@ abbr[title],
 abbr[data-original-title] {
   text-decoration: none;
   cursor: help;
-  border-bottom: 1px dotted #40514e;
+  border-bottom: 1px dotted #3d4144;
 }
 
 /* blockquotes */
@@ -845,7 +834,7 @@ blockquote {
   margin-inline-end: 1em;
   padding-inline: 1em;
   font-style: italic;
-  border-inline-start: 0.25em solid #11999e;
+  border-inline-start: 0.25em solid #d46a9e;
 }
 blockquote cite {
   font-style: italic;
@@ -857,10 +846,10 @@ blockquote cite::before {
 
 /* links */
 a:visited {
-  color: rgb(52.7, 168.3, 172.55);
+  color: rgb(218.45, 128.35, 172.55);
 }
 a:hover {
-  color: rgb(12.75, 114.75, 118.5);
+  color: rgb(159, 79.5, 118.5);
   outline: 0;
 }
 
@@ -883,7 +872,7 @@ hr {
   display: block;
   margin: 1em 0;
   border: 0;
-  border-top: 1px solid rgb(207.25, 211.5, 210.75);
+  border-top: 1px solid #faf8f6;
 }
 
 /* lists */
@@ -947,7 +936,7 @@ figure.third figcaption {
 /* Figure captions */
 figcaption {
   margin-bottom: 0.5em;
-  color: #40514e;
+  color: rgb(99.8, 103, 105.4);
   font-family: Georgia, Times, serif;
   font-size: 0.75em;
 }
@@ -956,7 +945,7 @@ figcaption a {
   transition: all 0.2s ease-in-out;
 }
 figcaption a:hover {
-  color: rgb(12.75, 114.75, 118.5);
+  color: rgb(159, 79.5, 118.5);
 }
 
 /* Fix IE9 SVG bug */
@@ -1049,7 +1038,7 @@ form legend {
   margin-bottom: 10px;
   margin-inline-start: -7px;
   padding: 0;
-  color: #40514e;
+  color: #3d4144;
   border: 0;
   white-space: normal;
 }
@@ -1084,7 +1073,7 @@ textarea {
 label {
   display: block;
   margin-bottom: 0.25em;
-  color: #40514e;
+  color: #3d4144;
   cursor: pointer;
 }
 label small {
@@ -1103,9 +1092,9 @@ select {
   width: 100%;
   padding: 0.25em;
   margin-bottom: 0.5em;
-  color: #40514e;
-  background-color: #f3f6f6;
-  border: rgb(207.25, 211.5, 210.75);
+  color: #3d4144;
+  background-color: #faf8f6;
+  border: #faf8f6;
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
 }
@@ -1228,10 +1217,10 @@ textarea[readonly] {
      ========================================================================== */
 input:focus,
 textarea:focus {
-  border-color: #11999e;
+  border-color: #d46a9e;
   outline: 0;
   outline: thin dotted \9 ;
-  box-shadow: inset 0 1px 3px rgba(64, 81, 78, 0.06), 0 0 5px rgba(17, 153, 158, 0.7);
+  box-shadow: inset 0 1px 3px rgba(61, 65, 68, 0.06), 0 0 5px rgba(212, 106, 158, 0.7);
 }
 
 input[type=file]:focus,
@@ -1246,7 +1235,7 @@ select:focus {
      ========================================================================== */
 .help-block,
 .help-inline {
-  color: #40514e;
+  color: rgb(99.8, 103, 105.4);
 }
 
 .help-block {
@@ -1370,7 +1359,7 @@ table {
   display: block;
   margin-bottom: 1em;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-family: "Glacial Indifference", sans-serif;
   font-size: 0.75em;
   border-collapse: collapse;
   overflow-x: auto;
@@ -1380,8 +1369,8 @@ table + table {
 }
 
 thead {
-  background-color: rgb(207.25, 211.5, 210.75);
-  border-bottom: 2px solid rgb(155.4375, 158.625, 158.0625);
+  background-color: #faf8f6;
+  border-bottom: 2px solid rgb(187.5, 186, 184.5);
 }
 
 th {
@@ -1392,7 +1381,7 @@ th {
 
 td {
   padding: 0.5em;
-  border-bottom: 1px solid rgb(155.4375, 158.625, 158.0625);
+  border-bottom: 1px solid rgb(187.5, 186, 184.5);
 }
 
 tr,
@@ -1451,21 +1440,21 @@ th {
   /* button colors */
 }
 .btn--primary {
-  background-color: #11999e;
+  background-color: #d46a9e;
   color: #fff;
 }
 .btn--primary:visited {
-  background-color: #11999e;
+  background-color: #d46a9e;
   color: #fff;
 }
 .btn--primary:hover {
-  background-color: rgb(13.6, 122.4, 126.4);
+  background-color: rgb(169.6, 84.8, 126.4);
   color: #fff;
 }
 .btn--inverse {
   background-color: #fff;
   color: #3d4144;
-  border: 1px solid rgb(207.25, 211.5, 210.75);
+  border: 1px solid #faf8f6;
 }
 .btn--inverse:visited {
   background-color: #fff;
@@ -1662,11 +1651,11 @@ th {
 .markdown-alert {
   margin: 2em 0 !important; /* override*/
   padding: 1em;
-  color: #40514e;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  color: #3d4144;
+  font-family: "Glacial Indifference", sans-serif;
   font-size: 0.75em !important;
   text-indent: initial; /* override*/
-  background-color: rgb(232.1, 235.3, 235.9);
+  background-color: rgb(237.7, 236.9, 235.9);
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(188.5, 192.5, 195.5, 0.25);
 }
@@ -1706,7 +1695,7 @@ blockquote.notice, blockquote.markdown-alert {
 
 .notice code,
 .markdown-alert code {
-  background-color: rgb(237.55, 240.65, 240.95);
+  background-color: rgb(243.85, 242.45, 240.95);
 }
 .notice pre code,
 .markdown-alert pre code {
@@ -1722,13 +1711,13 @@ blockquote.notice, blockquote.markdown-alert {
 .markdown-alert-important {
   margin: 2em 0 !important; /* override*/
   padding: 1em;
-  color: #40514e;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  color: #3d4144;
+  font-family: "Glacial Indifference", sans-serif;
   font-size: 0.75em !important;
   text-indent: initial; /* override*/
-  background-color: rgb(197.8, 227.4, 228.4);
+  background-color: rgb(242.4, 219.6, 228.4);
   border-radius: 4px;
-  box-shadow: 0 1px 1px rgba(17, 153, 158, 0.25);
+  box-shadow: 0 1px 1px rgba(212, 106, 158, 0.25);
 }
 .notice--primary h4,
 .markdown-alert-important h4 {
@@ -1754,19 +1743,19 @@ blockquote.notice, blockquote.markdown-alert {
 }
 .notice--primary a,
 .markdown-alert-important a {
-  color: rgb(15.3, 137.7, 142.2);
+  color: rgb(190.8, 95.4, 142.2);
 }
 .notice--primary a:hover,
 .markdown-alert-important a:hover {
-  color: rgb(8.5, 76.5, 79);
+  color: #6a354f;
 }
 blockquote.notice--primary, blockquote.markdown-alert-important {
-  border-inline-start-color: rgb(15.3, 137.7, 142.2);
+  border-inline-start-color: rgb(190.8, 95.4, 142.2);
 }
 
 .notice--primary code,
 .markdown-alert-important code {
-  background-color: rgb(220.4, 236.7, 237.2);
+  background-color: rgb(246.2, 233.8, 237.2);
 }
 .notice--primary pre code,
 .markdown-alert-important pre code {
@@ -1782,11 +1771,11 @@ blockquote.notice--primary, blockquote.markdown-alert-important {
 .markdown-alert-note {
   margin: 2em 0 !important; /* override*/
   padding: 1em;
-  color: #40514e;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  color: #3d4144;
+  font-family: "Glacial Indifference", sans-serif;
   font-size: 0.75em !important;
   text-indent: initial; /* override*/
-  background-color: rgb(206.2, 228, 234);
+  background-color: rgb(211.8, 229.6, 234);
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(59, 156, 186, 0.25);
 }
@@ -1826,7 +1815,7 @@ blockquote.notice--info, blockquote.markdown-alert-note {
 
 .notice--info code,
 .markdown-alert-note code {
-  background-color: rgb(224.6, 237, 240);
+  background-color: rgb(230.9, 238.8, 240);
 }
 .notice--info pre code,
 .markdown-alert-note pre code {
@@ -1842,11 +1831,11 @@ blockquote.notice--info, blockquote.markdown-alert-note {
 .markdown-alert-warning {
   margin: 2em 0 !important; /* override*/
   padding: 1em;
-  color: #40514e;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  color: #3d4144;
+  font-family: "Glacial Indifference", sans-serif;
   font-size: 0.75em !important;
   text-indent: initial; /* override*/
-  background-color: rgb(237.2, 222.2, 197.8);
+  background-color: rgb(242.8, 223.8, 197.8);
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(214, 127, 5, 0.25);
 }
@@ -1886,7 +1875,7 @@ blockquote.notice--warning, blockquote.markdown-alert-warning {
 
 .notice--warning code,
 .markdown-alert-warning code {
-  background-color: rgb(240.1, 234.1, 221.9);
+  background-color: rgb(246.4, 235.9, 221.9);
 }
 .notice--warning pre code,
 .markdown-alert-warning pre code {
@@ -1902,11 +1891,11 @@ blockquote.notice--warning, blockquote.markdown-alert-warning {
 .markdown-alert-tip {
   margin: 2em 0 !important; /* override*/
   padding: 1em;
-  color: #40514e;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  color: #3d4144;
+  font-family: "Glacial Indifference", sans-serif;
   font-size: 0.75em !important;
   text-indent: initial; /* override*/
-  background-color: rgb(207, 230, 209.4);
+  background-color: rgb(212.6, 231.6, 209.4);
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(63, 166, 63, 0.25);
 }
@@ -1946,7 +1935,7 @@ blockquote.notice--success, blockquote.markdown-alert-tip {
 
 .notice--success code,
 .markdown-alert-tip code {
-  background-color: rgb(225, 238, 227.7);
+  background-color: rgb(231.3, 239.8, 227.7);
 }
 .notice--success pre code,
 .markdown-alert-tip pre code {
@@ -1962,11 +1951,11 @@ blockquote.notice--success, blockquote.markdown-alert-tip {
 .markdown-alert-caution {
   margin: 2em 0 !important; /* override*/
   padding: 1em;
-  color: #40514e;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  color: #3d4144;
+  font-family: "Glacial Indifference", sans-serif;
   font-size: 0.75em !important;
   text-indent: initial; /* override*/
-  background-color: rgb(242, 215.8, 215);
+  background-color: rgb(247.6, 217.4, 215);
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(238, 95, 91, 0.25);
 }
@@ -2006,7 +1995,7 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
 
 .notice--danger code,
 .markdown-alert-caution code {
-  background-color: rgb(242.5, 230.9, 230.5);
+  background-color: rgb(248.8, 232.7, 230.5);
 }
 .notice--danger pre code,
 .markdown-alert-caution pre code {
@@ -2022,7 +2011,7 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
    ========================================================================== */
 .masthead {
   position: relative;
-  border-bottom: 1px solid rgb(207.25, 211.5, 210.75);
+  border-bottom: 1px solid #faf8f6;
   -webkit-animation: intro 0.3s both;
   animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
@@ -2047,7 +2036,7 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-family: "Playfair Display", serif;
 }
 @media (min-width: 80em) {
   .masthead__inner-wrap {
@@ -2200,19 +2189,19 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
   line-height: 1.5;
   text-align: center;
   text-decoration: none;
-  color: #40514e;
-  border: 1px solid rgb(155.4375, 158.625, 158.0625);
+  color: rgb(99.8, 103, 105.4);
+  border: 1px solid rgb(187.5, 186, 184.5);
   border-radius: 0;
 }
 .pagination li a:hover {
-  color: rgb(12.75, 114.75, 118.5);
+  color: rgb(159, 79.5, 118.5);
 }
 .pagination li a.current, .pagination li a.current.disabled {
   color: #fff;
-  background: #11999e;
+  background: #d46a9e;
 }
 .pagination li a.disabled {
-  color: rgba(64, 81, 78, 0.5);
+  color: rgba(99.8, 103, 105.4, 0.5);
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -2240,12 +2229,12 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  color: #40514e;
-  border: 1px solid rgb(155.4375, 158.625, 158.0625);
+  color: rgb(99.8, 103, 105.4);
+  border: 1px solid rgb(187.5, 186, 184.5);
   border-radius: 4px;
 }
 .pagination--pager:hover {
-  background-color: #40514e;
+  background-color: rgb(99.8, 103, 105.4);
   color: #fff;
 }
 .pagination--pager:first-child {
@@ -2258,7 +2247,7 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
   border-end-start-radius: 0;
 }
 .pagination--pager.disabled {
-  color: rgba(64, 81, 78, 0.5);
+  color: rgba(99.8, 103, 105.4, 0.5);
   pointer-events: none;
   cursor: not-allowed;
 }
@@ -2270,7 +2259,7 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
 .page__comments + .pagination {
   margin-top: 2em;
   padding-top: 2em;
-  border-top: 1px solid rgb(207.25, 211.5, 210.75);
+  border-top: 1px solid #faf8f6;
 }
 
 /*
@@ -2285,18 +2274,18 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
   -ms-flex-align: center;
   align-items: center;
   min-height: 2em;
-  background: #f3f6f6;
+  background: #faf8f6;
 }
 .greedy-nav a {
   display: block;
   margin: 0 1rem;
-  color: #40514e;
+  color: #d46a9e;
   text-decoration: none;
   -webkit-transition: none;
   transition: none;
 }
 .greedy-nav a:hover {
-  color: #40514e;
+  color: #d46a9e;
 }
 .greedy-nav a.site-logo {
   margin-inline-start: 0;
@@ -2344,7 +2333,7 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
   inset-inline-start: 0;
   bottom: 0;
   height: 4px;
-  background: #11999e;
+  background: #d46a9e;
   width: 100%;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -2362,9 +2351,9 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
   inset-inline-end: 0;
   margin-top: 15px;
   padding: 5px;
-  border: 1px solid rgb(207.25, 211.5, 210.75);
+  border: 1px solid #faf8f6;
   border-radius: 4px;
-  background: #f3f6f6;
+  background: #faf8f6;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
@@ -2377,8 +2366,8 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
   font-size: 1em;
 }
 .greedy-nav .hidden-links a:hover {
-  color: #40514e;
-  background: rgb(216.8, 220.2, 219.6);
+  color: #d46a9e;
+  background: rgb(244.25, 217.75, 230.75);
 }
 .greedy-nav .hidden-links::before {
   content: "";
@@ -2388,7 +2377,7 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
   width: 0;
   border-style: solid;
   border-width: 0 10px 10px;
-  border-color: rgb(207.25, 211.5, 210.75) transparent;
+  border-color: #faf8f6 transparent;
   display: block;
   z-index: 0;
 }
@@ -2400,13 +2389,13 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
   width: 0;
   border-style: solid;
   border-width: 0 10px 10px;
-  border-color: #f3f6f6 transparent;
+  border-color: #faf8f6 transparent;
   display: block;
   z-index: 1;
 }
 .greedy-nav .hidden-links li {
   display: block;
-  border-bottom: 1px solid rgb(207.25, 211.5, 210.75);
+  border-bottom: 1px solid #faf8f6;
 }
 .greedy-nav .hidden-links li:last-child {
   border-bottom: none;
@@ -2554,7 +2543,7 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
 .nav__title {
   margin: 0;
   padding: 0.5rem 0.75rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 1em;
   font-weight: bold;
 }
@@ -2563,21 +2552,21 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
   display: block;
   margin: 0.5rem 0;
   padding: 0.25rem 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 0.75em;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 1px solid rgb(207.25, 211.5, 210.75);
+  border-bottom: 1px solid #faf8f6;
 }
 
 /*
      Table of contents navigation
      ========================================================================== */
 .toc {
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-family: "Playfair Display", serif;
   color: #7a8288;
-  background-color: #f3f6f6;
-  border: 1px solid rgb(207.25, 211.5, 210.75);
+  background-color: #faf8f6;
+  border: 1px solid #faf8f6;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
@@ -2585,12 +2574,12 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
 .toc .nav__title {
   color: #fff;
   font-size: 0.75em;
-  background: #11999e;
+  background: #d46a9e;
   border-start-start-radius: 4px;
   border-start-end-radius: 4px;
 }
 .toc .active a {
-  background-color: rgb(207.4, 234.6, 235.6);
+  background-color: rgb(246.4, 225.2, 235.6);
   color: #3d4144;
 }
 
@@ -2609,13 +2598,13 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
 .toc__menu a {
   display: block;
   padding: 0.25rem 0.75rem;
-  color: #40514e;
+  color: rgb(99.8, 103, 105.4);
   font-weight: bold;
   line-height: 1.5;
-  border-bottom: 1px solid rgb(207.25, 211.5, 210.75);
+  border-bottom: 1px solid #faf8f6;
 }
 .toc__menu a:hover {
-  color: #40514e;
+  color: #3d4144;
 }
 .toc__menu li ul > li a {
   padding-inline-start: 1.25rem;
@@ -2650,12 +2639,12 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
   margin-inline: 0;
   width: 100%;
   margin-top: 3em;
-  color: #40514e;
+  color: rgb(99.8, 103, 105.4);
   -webkit-animation: intro 0.3s both;
   animation: intro 0.3s both;
   -webkit-animation-delay: 0.45s;
   animation-delay: 0.45s;
-  background-color: #30e3ca;
+  background-color: #f8dbe3;
 }
 .page__footer footer {
   clear: both;
@@ -2687,11 +2676,11 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
 .page__footer .fab,
 .page__footer .far,
 .page__footer .fal {
-  color: #40514e;
+  color: rgb(99.8, 103, 105.4);
 }
 
 .page__footer-copyright {
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-family: "Glacial Indifference", sans-serif;
   font-size: 0.6875em;
 }
 
@@ -2704,7 +2693,7 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
   display: inline-block;
   padding-top: 5px;
   padding-bottom: 5px;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-family: "Playfair Display", serif;
   font-size: 0.75em;
   text-transform: uppercase;
 }
@@ -2732,14 +2721,14 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
   height: 2rem;
   border: 0;
   outline: none;
-  color: #11999e;
+  color: #d46a9e;
   background-color: transparent;
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 .search__toggle:hover {
-  color: rgb(12.75, 114.75, 118.5);
+  color: rgb(159, 79.5, 118.5);
 }
 
 .search-icon {
@@ -2829,13 +2818,13 @@ blockquote.notice--danger, blockquote.markdown-alert-caution {
 }
 
 .archive__item-title .ais-Highlight {
-  color: #11999e;
+  color: #d46a9e;
   font-style: normal;
   text-decoration: underline;
 }
 
 .archive__item-excerpt .ais-Highlight {
-  color: #11999e;
+  color: #d46a9e;
   font-style: normal;
   font-weight: bold;
 }
@@ -3364,7 +3353,7 @@ body:hover .visually-hidden button {
 .social-icons .fab,
 .social-icons .far,
 .social-icons .fal {
-  color: #40514e;
+  color: #3d4144;
 }
 .social-icons .fa-behance, .social-icons .fa-behance-square {
   color: #1769ff;
@@ -3449,7 +3438,7 @@ body:hover .visually-hidden button {
   position: relative;
   width: 1.5rem;
   height: 0.25rem;
-  background: #11999e;
+  background: #d46a9e;
   margin: auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -3460,7 +3449,7 @@ body:hover .visually-hidden button {
   inset-inline-start: 0;
   width: 1.5rem;
   height: 0.25rem;
-  background: #11999e;
+  background: #d46a9e;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -3504,7 +3493,7 @@ body:hover .visually-hidden button {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background-color: #f3f6f6;
+    background-color: #faf8f6;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     pointer-events: none;
@@ -3520,7 +3509,7 @@ body:hover .visually-hidden button {
 .greedy-nav__toggle:hover .navicon,
 .greedy-nav__toggle:hover .navicon:before,
 .greedy-nav__toggle:hover .navicon:after {
-  background: rgb(12.75, 114.75, 118.5);
+  background: rgb(159, 79.5, 118.5);
 }
 .greedy-nav__toggle:hover.close .navicon {
   background: transparent;
@@ -3593,7 +3582,7 @@ body:hover .visually-hidden button {
   min-height: 0;
   z-index: 9999;
   background: #fff;
-  border: 1px solid rgb(207.25, 211.5, 210.75);
+  border: 1px solid #faf8f6;
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
 }
@@ -3606,7 +3595,7 @@ body:hover .visually-hidden button {
 }
 .modal__actions {
   padding: 0.5em 1em;
-  border-top: 1px solid rgb(207.25, 211.5, 210.75);
+  border-top: 1px solid #faf8f6;
 }
 
 /*
@@ -3816,7 +3805,7 @@ body {
   line-height: 1;
 }
 .page__title a {
-  color: #40514e;
+  color: #3d4144;
   text-decoration: none;
 }
 .page__title + .page__meta, .page__title + .comment__date {
@@ -3824,13 +3813,13 @@ body {
 }
 
 .page__lead {
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-family: "Glacial Indifference", sans-serif;
   font-size: 1.25em;
 }
 
 .page__content h2 {
   padding-bottom: 0.5em;
-  border-bottom: 1px solid rgb(207.25, 211.5, 210.75);
+  border-bottom: 1px solid #faf8f6;
 }
 .page__content h1 .header-link, .page__content h2 .header-link, .page__content h3 .header-link, .page__content h4 .header-link, .page__content h5 .header-link, .page__content h6 .header-link {
   position: relative;
@@ -3999,7 +3988,7 @@ body {
 .page__share {
   margin-top: 2em;
   padding-top: 1em;
-  border-top: 1px solid rgb(207.25, 211.5, 210.75);
+  border-top: 1px solid #faf8f6;
 }
 @media (max-width: 37.5em) {
   .page__share .btn span {
@@ -4025,7 +4014,7 @@ body {
    ========================================================================== */
 .page__meta, .comment__date {
   margin-top: 2em;
-  color: #40514e;
+  color: rgb(99.8, 103, 105.4);
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   font-size: 0.75em;
 }
@@ -4063,12 +4052,12 @@ body {
   margin-bottom: 8px;
   padding: 5px 10px;
   text-decoration: none;
-  border: 1px solid rgb(155.4375, 158.625, 158.0625);
+  border: 1px solid rgb(187.5, 186, 184.5);
   border-radius: 4px;
 }
 .page__taxonomy-item:hover {
   text-decoration: none;
-  color: rgb(12.75, 114.75, 118.5);
+  color: rgb(159, 79.5, 118.5);
 }
 
 .taxonomy__section {
@@ -4076,7 +4065,7 @@ body {
   padding-bottom: 1em;
 }
 .taxonomy__section:not(:last-child) {
-  border-bottom: solid 1px rgb(207.25, 211.5, 210.75);
+  border-bottom: solid 1px #faf8f6;
 }
 .taxonomy__section .archive__item-title {
   margin-top: 0;
@@ -4091,11 +4080,11 @@ body {
 
 .taxonomy__title {
   margin-bottom: 0.5em;
-  color: #40514e;
+  color: rgb(99.8, 103, 105.4);
 }
 
 .taxonomy__count {
-  color: #40514e;
+  color: rgb(99.8, 103, 105.4);
 }
 
 .taxonomy__index {
@@ -4122,13 +4111,13 @@ body {
   justify-content: space-between;
   color: inherit;
   text-decoration: none;
-  border-bottom: 1px solid rgb(207.25, 211.5, 210.75);
+  border-bottom: 1px solid #faf8f6;
 }
 
 .back-to-top {
   display: block;
   clear: both;
-  color: #40514e;
+  color: rgb(99.8, 103, 105.4);
   font-size: 0.6em;
   text-transform: uppercase;
   text-align: end;
@@ -4150,7 +4139,7 @@ body {
   margin-bottom: 10px;
   padding-top: 2rem;
   font-size: 0.75em;
-  border-top: 1px solid rgb(207.25, 211.5, 210.75);
+  border-top: 1px solid #faf8f6;
   text-transform: uppercase;
 }
 
@@ -4181,7 +4170,7 @@ body {
   margin: 1em 0;
 }
 .comment:not(:last-child) {
-  border-bottom: 1px solid rgb(207.25, 211.5, 210.75);
+  border-bottom: 1px solid #faf8f6;
 }
 
 .comment__avatar-wrapper {
@@ -4206,7 +4195,7 @@ body {
     width: 80px;
     height: 80px;
     padding: 5px;
-    border: 1px solid rgb(207.25, 211.5, 210.75);
+    border: 1px solid #faf8f6;
   }
 }
 
@@ -4249,7 +4238,7 @@ body {
   float: inline-start;
   margin-top: 2em;
   padding-top: 1em;
-  border-top: 1px solid rgb(207.25, 211.5, 210.75);
+  border-top: 1px solid #faf8f6;
 }
 @media (min-width: 64em) {
   .page__related {
@@ -4323,8 +4312,8 @@ body {
   margin: 1.414em 0 0.5em;
   padding-bottom: 0.5em;
   font-size: 1em;
-  color: #40514e;
-  border-bottom: 1px solid rgb(207.25, 211.5, 210.75);
+  color: rgb(99.8, 103, 105.4);
+  border-bottom: 1px solid #faf8f6;
 }
 .archive__subtitle + .list__item .archive__item-title {
   margin-top: 0.5em;
@@ -4332,7 +4321,7 @@ body {
 
 .archive__item-title {
   margin-bottom: 0.25em;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-family: "Playfair Display", serif;
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -4510,7 +4499,7 @@ body {
 }
 .feature__wrapper {
   margin-bottom: 2em;
-  border-bottom: 1px solid rgb(207.25, 211.5, 210.75);
+  border-bottom: 1px solid #faf8f6;
 }
 .feature__wrapper .archive__item-title {
   margin-bottom: 0;
@@ -4719,7 +4708,7 @@ body {
 .sidebar h5,
 .sidebar h6 {
   margin-bottom: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  font-family: "Playfair Display", serif;
 }
 .sidebar p,
 .sidebar li {
@@ -4810,7 +4799,7 @@ body {
 @media (min-width: 64em) {
   .author__avatar img {
     padding: 5px;
-    border: 1px solid rgb(207.25, 211.5, 210.75);
+    border: 1px solid #faf8f6;
   }
 }
 
@@ -4907,9 +4896,9 @@ body {
   margin-top: 15px;
   padding: 10px;
   list-style-type: none;
-  border: 1px solid rgb(207.25, 211.5, 210.75);
+  border: 1px solid #faf8f6;
   border-radius: 4px;
-  background: #f3f6f6;
+  background: #faf8f6;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   cursor: default;
 }
@@ -4936,7 +4925,7 @@ body {
   width: 0;
   border-style: solid;
   border-width: 0 10px 10px;
-  border-color: rgb(207.25, 211.5, 210.75) transparent;
+  border-color: #faf8f6 transparent;
   z-index: 0;
 }
 @media (min-width: 64em) {
@@ -4953,7 +4942,7 @@ body {
   width: 0;
   border-style: solid;
   border-width: 0 10px 10px;
-  border-color: #f3f6f6 transparent;
+  border-color: #faf8f6 transparent;
   z-index: 1;
 }
 @media (min-width: 64em) {
@@ -5218,6 +5207,130 @@ body {
     display: none !important;
     height: 1px !important;
   }
+}
+@font-face {
+  font-family: "Priestacy";
+  src: url("/assets/fonts/Priestacy.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* === JOSEFIN SANS FONT FAMILY === */
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("/assets/fonts/josefin-sans/JosefinSans-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("/assets/fonts/josefin-sans/JosefinSans-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("/assets/fonts/josefin-sans/JosefinSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("/assets/fonts/josefin-sans/JosefinSans-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("/assets/fonts/josefin-sans/JosefinSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("/assets/fonts/josefin-sans/JosefinSans-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("/assets/fonts/josefin-sans/JosefinSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("/assets/fonts/josefin-sans/JosefinSans-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("/assets/fonts/josefin-sans/JosefinSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("/assets/fonts/josefin-sans/JosefinSans-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+/* === GLACIAL INDIFFERENCE === */
+@font-face {
+  font-family: "Glacial Indifference";
+  src: url("/assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Glacial Indifference";
+  src: url("/assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+.site-title,
+.greedy-nav a {
+  color: #d46a9e !important;
+}
+
+.site-title {
+  font-size: 1.3rem !important;
+  font-family: "Priestacy", cursive;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  -webkit-font-smoothing: antialiased;
+}
+
+.greedy-nav a {
+  font-size: 1rem;
+}
+
+.greedy-nav {
+  align-items: flex-end;
+}
+
+.masthead {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+h1, h2, h3, h4, h5 {
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+/* Hide heading anchor link icon */
+.header-link,
+.anchorjs-link {
+  display: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,8 +1,10 @@
 ---
-layout: single
+layout: splash
 title: "Details"
 permalink: /details/
 ---
+
+# Details
 
 **Date:**  
 **Time:**  

@@ -1,0 +1,20 @@
+---
+# Only the main Sass file needs front matter
+---
+
+/* Override theme variables BEFORE importing theme */
+$sans-serif-narrow: "Playfair Display", serif;
+$header-font-family: 'Josefin Sans', sans-serif;
+$global-font-family: 'Glacial Indifference', sans-serif;
+
+$border-color: #faf8f6;
+$background-color: #faf8f6;
+$masthead-background-color: #faf8f6;
+$footer-background-color: #f8dbe3;
+$link-color: #d46a9e;
+$masthead-link-color: #d46a9e;
+$masthead-link-color-hover: #d46a9e;
+$primary-color: #d46a9e;
+
+@import "minimal-mistakes";
+@import "custom";

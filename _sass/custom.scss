@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap');
+
+@font-face {
+  font-family: 'Priestacy';
+  src: url('/assets/fonts/Priestacy.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* === JOSEFIN SANS FONT FAMILY === */
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/assets/fonts/josefin-sans/JosefinSans-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/assets/fonts/josefin-sans/JosefinSans-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/assets/fonts/josefin-sans/JosefinSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/assets/fonts/josefin-sans/JosefinSans-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/assets/fonts/josefin-sans/JosefinSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/assets/fonts/josefin-sans/JosefinSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/assets/fonts/josefin-sans/JosefinSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/assets/fonts/josefin-sans/JosefinSans-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/assets/fonts/josefin-sans/JosefinSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src: url('/assets/fonts/josefin-sans/JosefinSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* === GLACIAL INDIFFERENCE === */
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('/assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('/assets/fonts/glacial-indifference/GlacialIndifference-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  // font-family: 'Inter', sans-serif;
+}
+
+.site-title,
+.greedy-nav a {
+  color: #d46a9e !important;  // soft baby pink
+}
+
+.site-title {
+  // font-weight: 400;
+  font-size: 1.3rem !important;
+  font-family: 'Priestacy', cursive;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  -webkit-font-smoothing: antialiased;
+}
+
+.greedy-nav a {
+  font-size: 1.0rem;
+}
+
+.greedy-nav {
+  align-items: flex-end;
+}
+
+.masthead {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+
+
+
+
+// /* NAV LINK BASE */
+// .masthead__menu-item {
+//   color: #e88ab3 !important;
+// }
+
+// /* HOVER STATE */
+// .greedy-nav a:hover {
+//   color: #e88ab3 !important;
+// }
+
+
+
+
+
+h1, h2, h3, h4, h5 {
+  // font-family: 'Inter', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+/* Hide heading anchor link icon */
+.header-link,
+.anchorjs-link {
+  display: none !important;
+}

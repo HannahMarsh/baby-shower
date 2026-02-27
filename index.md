@@ -4,7 +4,7 @@ title: "You're Invited!"
 permalink: /
 ---
 
-## 🎀 Celebrating Baby [Name]
+# Celebrating Baby Olivia
 
 **Date:**  
 **Time:**  
