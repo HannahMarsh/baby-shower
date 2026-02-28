@@ -17,4 +17,4 @@ Gentlemen and ladies alike are warmly invited!
 Instead of a card, please bring a favorite children’s book
 and write a message inside the cover.
 
-Please let us know if you’ll be joining us by visiting the RSVP tab above.
+Let us know if you’ll be joining us by visiting the RSVP tab above.
