@@ -5365,6 +5365,20 @@ body {
   padding: 0.25rem 0.75rem !important;
 }
 
+.qr-code {
+  box-shadow: none;
+}
+
+.qr-code img {
+  margin-top: -0.5rem !important;
+  margin-bottom: -1rem !important;
+}
+
+.btn {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: small;
+}
+
 h1, h2, h3, h4, h5 {
   letter-spacing: 0.5px;
 }
