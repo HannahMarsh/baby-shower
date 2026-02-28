@@ -51,6 +51,7 @@ After submitting your book, refresh this page to see it appear below.
 <div class="books-widget">
   <div class="books-controls">
 
+    <!-- 
     <div class="search-wrapper">
         <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
             <path d="M10 2a8 8 0 105.293 14.293l4.707 4.707 1.414-1.414-4.707-4.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/>
@@ -63,11 +64,13 @@ After submitting your book, refresh this page to see it appear below.
             placeholder="Search by title or author…"
             autocomplete="off"
         />
-    </div>
-<!-- 
+    </div> 
+    -->
+
     <div class="search-wrapper">
+        <i class="fa-solid fa-magnifying-glass"></i>
         <input id="bookSearch" class="book-search" type="search" placeholder="Search by title or author…" autocomplete="off" />
-    </div> -->
+    </div>
     <div class="books-meta" id="booksMeta"></div>
   </div>
 

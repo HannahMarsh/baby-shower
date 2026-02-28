@@ -230,20 +230,9 @@ h2 {
   gap: 1rem;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-bottom: 1rem;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -256,16 +245,16 @@ h2 {
   width: 100%;
 }
 
-.search-icon {
+/* Icon styling */
+.search-wrapper i {
   position: absolute;
   left: 8px;
   top: 40%;
   transform: translateY(-50%);
-  width: 16px;
-  height: 16px;
-  fill: #c57aa0;   /* your pink */
-  opacity: 0.6;
-  pointer-events: none;
+  font-size: 0.8rem;
+  color: #c57aa0; /* your soft pink */
+  // opacity: 0.8;
+  pointer-events: none; /* so clicks go to input */
 }
 
 /* Make the input fill the wrapper */
@@ -276,7 +265,7 @@ h2 {
   border-radius: 9px;
   border: 1px solid rgba(0,0,0,0.12);
   background: rgba(255,255,255,0.55);
-  font-size: 16px;
+  font-size: 17px;
   outline: none;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -284,7 +273,7 @@ h2 {
 #bookSearch::placeholder {
   font-weight: 700 !important;
   color: #c57aa0 !important;      /* soft pink */
-  opacity: 0.6;       
+  opacity: 0.55;       
 }
 
 .book-search:focus {
