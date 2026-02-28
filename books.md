@@ -4,6 +4,10 @@ title: "Books Instead of Cards"
 permalink: /books/
 ---
 
+
+<div class="cloud-bg"></div>
+
+
 # Bring your favorite book!
 
 Instead of a card, please bring a children's book and write a message inside the cover :)

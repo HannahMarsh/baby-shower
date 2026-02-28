@@ -4,6 +4,8 @@ title: "You're Invited!"
 permalink: /
 ---
 
+<div class="cloud-bg"></div>
+
 # Celebrating Baby Olivia ♡
 
 Join us as we gather to celebrate Hannah, Jeffrey, and the upcoming arrival of Baby Olivia!

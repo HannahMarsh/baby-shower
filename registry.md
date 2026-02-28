@@ -4,6 +4,9 @@ title: "Registry"
 permalink: /registry/
 ---
 
+
+<div class="cloud-bg"></div>
+
 Your presence at our shower is the greatest gift, but if you’d like to contribute, we are so thankful.
 
 # Gift Registry

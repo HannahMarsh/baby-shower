@@ -4,6 +4,10 @@ title: "FAQ"
 permalink: /faq/
 ---
 
+
+<div class="cloud-bg"></div>
+
+
 **Where is the shower being held?**
 
 The shower will be held at blablabla.

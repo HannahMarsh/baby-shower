@@ -135,6 +135,7 @@ body {
   display: flex !important;
   flex-wrap: wrap !important;
   align-items: flex-start !important;
+  background: transparent !important;
 }
 
 /* Row 1: Title takes full width (forces its own line) */
@@ -170,11 +171,14 @@ body {
   overflow: visible !important;
 }
 
+.greedy-nav ul.visible-links, .greedy-nav ul.hidden-links, .greedy-nav ul.hidden-links.hidden {
+  visibility: hidden !important;
+}
 /* Some theme rules hide li/a instead of the ul */
 .greedy-nav ul.hidden-links.hidden > li,
 .greedy-nav ul.hidden-links.hidden a {
   display: inline-flex !important;
-  visibility: visible !important;
+  visibility: visible;
 }
 
 /* Make spacing consistent */
@@ -353,4 +357,33 @@ h2 {
 .books-loading, .books-empty, .books-error {
   padding: 1rem;
   opacity: 0.75;
+}
+
+
+
+
+
+.cloud-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+
+  background: url("/assets/images/clouds.gif") center top / cover no-repeat;
+
+  z-index: -1;              /* behind everything */
+  pointer-events: none;     /* clicks pass through */
+  opacity: 0.85;             /* soften it */
+}
+
+/* Fade out at bottom */
+.cloud-bg::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), #faf8f6);
 }
