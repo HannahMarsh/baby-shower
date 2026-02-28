@@ -4,11 +4,13 @@ title: "RSVP"
 permalink: /rsvp/
 ---
 
-# Kindly complete the below RSVP form by **June 1, 2026**.  
+<!-- # Kindly complete the below RSVP form by **June 1, 2026**.   -->
 
 <!-- <embed type="text/html" src="https://tally.so/embed/vGNOeA?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" width="500"> -->
 
-<div class="form-wrapper">
+
+
+<div class="form-wrapper-rsvp">
   <iframe 
     data-tally-src="https://tally.so/embed/vGNOeA?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
     loading="lazy"

@@ -4,6 +4,30 @@ title: "FAQ"
 permalink: /faq/
 ---
 
+**Where is the shower being held?**
 
-**Is this co-ed?**  
-…
+The shower will be held at blablabla.
+
+**What time should I arrive?**
+
+The celebration begins at 1:00 PM and we recommend arriving within the first 20–30 minutes so we can gather everyone together to kick things off.
+
+**Is this a co-ed shower?**  
+
+Yes! This is a co-ed celebration, and we can’t wait to gather all of our favorite people!
+
+**What should I wear?**
+
+Casual is perfectly fine! 
+
+**Are children invited?**
+
+Absolutely! This is a family-friendly celebration.
+
+**Will there be food?**
+
+Yes! Food will be served buffet-style, along with light refreshments.
+
+**Who can I contact with questions?**
+
+If you have any questions, feel free to reach out to Hannah (603-953-3094) or Terri (603-556-0318).
