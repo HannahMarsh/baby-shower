@@ -208,3 +208,89 @@ h2 {
 .anchorjs-link {
   display: none !important;
 }
+
+
+/* ===== Books widget (matches your soft/pink theme) ===== */
+
+.books-widget {
+  margin-top: 1.5rem;
+}
+
+.books-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.book-search {
+  flex: 1 1 280px;
+  max-width: 520px;
+  padding: 0.75rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,0.12);
+  background: rgba(255,255,255,0.55);
+  font-size: 1rem;
+  outline: none;
+}
+
+.book-search:focus {
+  border-color: rgba(255,105,180,0.5);
+  box-shadow: 0 0 0 4px rgba(255,105,180,0.12);
+}
+
+.books-meta {
+  font-size: 0.95rem;
+  opacity: 0.7;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .books-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 520px) {
+  .books-grid { grid-template-columns: 1fr; }
+}
+
+.book-card {
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 16px;
+  padding: 1rem 1rem 0.9rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+}
+
+.book-title {
+  font-size: 1.05rem;
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.book-author {
+  margin-top: 0.35rem;
+  opacity: 0.75;
+}
+
+.book-tag {
+  display: inline-block;
+  margin-top: 0.65rem;
+  padding: 0.28rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  background: rgba(255,105,180,0.10);
+  color: rgba(180, 40, 120, 0.95);
+  border: 1px solid rgba(255,105,180,0.18);
+}
+
+.books-loading, .books-empty, .books-error {
+  padding: 1rem;
+  opacity: 0.75;
+}
