@@ -4,7 +4,7 @@ title: "Registry"
 permalink: /registry/
 ---
 
-# Gift Registry
+## Gift Registry
 
 Your presence at our shower is the greatest gift, but if you’d like to contribute, we are so thankful.
 
