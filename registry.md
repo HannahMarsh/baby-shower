@@ -4,10 +4,12 @@ title: "Registry"
 permalink: /registry/
 ---
 
-# Registry
+# Gift Registry
 
-We’re so grateful for your love and support. If you’d like to give a gift, our registry is here:
+Your presence at our shower is the greatest gift, but if you’d like to contribute, we are so thankful. 💗
 
-- Babylist: (link)
-- Amazon: (link)
-- Target: (link)
+<img src="/assets/images/babylist-qr.png" alt="Babylist registry QR code" style="max-width: 150px;">
+
+<a class="btn btn--primary btn--large" href="https://my.babylist.com/rtyaqfbjz" target="_blank" rel="noopener">
+  View our Babylist Registry
+</a>

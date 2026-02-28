@@ -1,5 +1,5 @@
 main:
-  - title: "Home"
+  - title: "Details"
     url: /
   - title: "Registry"
     url: /registry/
