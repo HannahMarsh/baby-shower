@@ -4,15 +4,15 @@ title: "Books Instead of Cards"
 permalink: /books/
 ---
 
-## Bring your favorite book!
+# Bring your favorite book!
 
-Instead of a card, please bring a children's book and write a message inside the cover!
+Instead of a card, please bring a children's book and write a message inside the cover :)
 
 We are building Baby Olivia’s very first library. To help avoid duplicates, you can see which books have already been chosen below.
 
 If you’d like to add the book you’re bringing, please submit it here:
 
-<div class="rsvp-wrapper">
+<div class="form-wrapper">
   <iframe 
     data-tally-src="https://tally.so/embed/EkPbDL?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
     loading="lazy"
@@ -42,13 +42,32 @@ If you’d like to add the book you’re bringing, please submit it here:
 
 
 
-## Registered Books
+# Olivia's Library
+
+After submitting your book, refresh this page to see it appear below.
 
 
 
 <div class="books-widget">
   <div class="books-controls">
-    <input id="bookSearch" class="book-search" type="search" placeholder="Search by title or author…" autocomplete="off" />
+
+    <div class="search-wrapper">
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M10 2a8 8 0 105.293 14.293l4.707 4.707 1.414-1.414-4.707-4.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/>
+        </svg>
+
+        <input
+            id="bookSearch"
+            class="book-search"
+            type="search"
+            placeholder="Search by title or author…"
+            autocomplete="off"
+        />
+    </div>
+<!-- 
+    <div class="search-wrapper">
+        <input id="bookSearch" class="book-search" type="search" placeholder="Search by title or author…" autocomplete="off" />
+    </div> -->
     <div class="books-meta" id="booksMeta"></div>
   </div>
 

@@ -119,7 +119,7 @@ body {
 
 .masthead {
   padding-top: 1.5rem;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
 
 
@@ -187,16 +187,17 @@ body {
 
 
 
-
-
 h1, h2, h3, h4, h5 {
   // font-family: 'Inter', sans-serif;
   letter-spacing: 0.5px;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   letter-spacing: 1px;
+  font-weight: normal !important;
 }
 
 h2 {
@@ -208,6 +209,14 @@ h2 {
 .anchorjs-link {
   display: none !important;
 }
+
+
+
+.form-wrapper {
+  margin-top: -1.5rem !important;
+  margin-left: -0.45rem !important;
+}
+
 
 
 /* ===== Books widget (matches your soft/pink theme) ===== */
@@ -225,15 +234,57 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.book-search {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Make the wrapper behave like the old input did */
+.search-wrapper {
+  position: relative;
   flex: 1 1 280px;
   max-width: 520px;
-  padding: 0.75rem 0.9rem;
-  border-radius: 999px;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 8px;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  fill: #c57aa0;   /* your pink */
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Make the input fill the wrapper */
+.search-wrapper .book-search {
+  width: 100%;
+  max-width: none; /* important: let wrapper control max width */
+  padding: 0.6rem 0.8rem 0.6rem 28px;
+  border-radius: 9px;
   border: 1px solid rgba(0,0,0,0.12);
   background: rgba(255,255,255,0.55);
-  font-size: 1rem;
+  font-size: 16px;
   outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#bookSearch::placeholder {
+  font-weight: 700 !important;
+  color: #c57aa0 !important;      /* soft pink */
+  opacity: 0.6;       
 }
 
 .book-search:focus {
