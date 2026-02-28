@@ -117,28 +117,73 @@ body {
   font-size: 1.0rem;
 }
 
-.greedy-nav {
-  align-items: flex-end;
-}
-
 .masthead {
-  padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
 }
 
 
+/* ===== Masthead: title on its own line, nav below (right), no hamburger, no disappearing ===== */
+
+/* Hide hamburger button */
+.greedy-nav__toggle {
+  display: none !important;
+}
+
+/* Allow wrapping into multiple rows */
+.greedy-nav {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: flex-start !important;
+}
+
+/* Row 1: Title takes full width (forces its own line) */
+.greedy-nav .site-title {
+  order: 1 !important;
+  flex: 0 0 100% !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.greedy-nav ul.visible-links,
+.greedy-nav ul.hidden-links,
+.greedy-nav ul.hidden-links.hidden {
+  order: 2 !important;
+
+  flex: 0 0 100% !important;     /* take full row width */
+  width: 100% !important;
+
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: flex-end !important;  /* now this works */
+
+  /* neutralize dropdown styling */
+  position: static !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+
+  visibility: visible !important;
+  opacity: 1 !important;
+  height: auto !important;
+  overflow: visible !important;
+}
+
+/* Some theme rules hide li/a instead of the ul */
+.greedy-nav ul.hidden-links.hidden > li,
+.greedy-nav ul.hidden-links.hidden a {
+  display: inline-flex !important;
+  visibility: visible !important;
+}
+
+/* Make spacing consistent */
+.greedy-nav .visible-links a,
+.greedy-nav .hidden-links a {
+  padding: 0.25rem 0.75rem !important;
+}
 
 
-
-// /* NAV LINK BASE */
-// .masthead__menu-item {
-//   color: #e88ab3 !important;
-// }
-
-// /* HOVER STATE */
-// .greedy-nav a:hover {
-//   color: #e88ab3 !important;
-// }
 
 
 
