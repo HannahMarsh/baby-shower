@@ -5,5 +5,7 @@ main:
     url: /registry/
   - title: "RSVP"
     url: /rsvp/
+  - title: "Books"
+    url: /books/
   - title: "FAQ"
     url: /faq/
