@@ -20,10 +20,6 @@ The celebration begins at 1:00 PM and we recommend arriving within the first 20â
 
 Yes! This is a co-ed celebration, and we canâ€™t wait to gather all of our favorite people!
 
-**What should I wear?**
-
-Casual is perfectly fine! 
-
 **Are children invited?**
 
 Absolutely! This is a family-friendly celebration.
