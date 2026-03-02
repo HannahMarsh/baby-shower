@@ -10,11 +10,11 @@ permalink: /faq/
 
 **What time should I arrive?**
 
-The celebration begins at 1:00 PM and we recommend arriving within the first 20–30 minutes so we can gather everyone together to kick things off.
+The celebration begins at 1:00 PM and we recommend arriving within the first 20–30 minutes.
 
 **Is this a co-ed shower?**  
 
-Yes! This is a co-ed celebration, and we can’t wait to gather all of our favorite people!
+Yes! This is a co-ed celebration.
 
 **Are children invited?**
 
