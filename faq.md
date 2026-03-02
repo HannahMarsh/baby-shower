@@ -8,10 +8,6 @@ permalink: /faq/
 <div class="cloud-bg"></div>
 
 
-**Where is the shower being held?**
-
-The shower will be held at blablabla.
-
 **What time should I arrive?**
 
 The celebration begins at 1:00 PM and we recommend arriving within the first 20–30 minutes so we can gather everyone together to kick things off.
