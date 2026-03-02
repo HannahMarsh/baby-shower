@@ -21,6 +21,6 @@ and write a message inside the cover.
 
 Let us know if you’ll be joining!
 
-<a class="btn btn--primary btn--small" href="/rsvp/" target="_blank" rel="noopener">
+<a class="btn btn--primary btn--small" href="/rsvp/">
   <i class="fa-solid fa-heart"></i> RSVP Here
 </a>
