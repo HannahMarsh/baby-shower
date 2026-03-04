@@ -48,8 +48,7 @@ If you’d like to add the book you’re bringing, please submit it here:
 
 # Olivia's Library
 
-After submitting your book, refresh this page to see it appear below.
-
+After submitting your book, <a href="#" onclick="location.reload(); return false;"><i class="fa-solid fa-arrows-rotate" style="font-size:0.7em; display:inline;"></i> refresh this page</a> until you see it appear below. 
 
 
 <div class="books-widget">
