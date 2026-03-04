@@ -216,13 +216,12 @@
     <div class="books-meta" id="booksMeta"></div>
   </div>
 
-  <div id="booksGrid" class="books-grid">
+  <div id="booksGrid" class="books-list">
     <div class="books-loading">Loading book list…</div>
   </div>
 </div>
 
 <script>
-  // ✅ 1) Paste your published CSV URL here:
   const BOOKS_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQLK5X0ZumxqktaZCKzaF8LfR_hC2_n6SfBYJIr9i-fbb2wNEY_tbtjy_GtTFH-uTNxi5ar7Fk2iV-y/pub?gid=0&single=true&output=csv";
 
   // ---- CSV parsing that handles quoted commas ----
@@ -309,6 +308,24 @@
       // Sort by title (just in case the sheet isn't already sorted)
       items.sort((a,b) => normalize(a.title).localeCompare(normalize(b.title)));
 
+
+      function toTitleCase(str) {
+        return (str || "")
+          .toString()
+          .trim()
+          .toLowerCase()
+          .replace(/\s+/g, " ")
+          .split(" ")
+          .map(w => {
+            // keep small edge cases reasonable (e.g., "dr." -> "Dr.")
+            const m = w.match(/^([^a-z0-9]*)([a-z0-9]+)([^a-z0-9]*)$/i);
+            if (!m) return w;
+            const [, pre, core, suf] = m;
+            return pre + core.charAt(0).toUpperCase() + core.slice(1) + suf;
+          })
+          .join(" ");
+      }
+
       function render(filterText = "") {
         const q = normalize(filterText);
 
@@ -327,13 +344,15 @@
           return;
         }
 
-        grid.innerHTML = filtered.map(it => `
-          <div class="book-card">
-            <div class="book-title">${escapeHTML(it.title)}</div>
-            ${it.author ? `<div class="book-author">${escapeHTML(it.author)}</div>` : ""}
-            ${it.format ? `<div class="book-tag">${escapeHTML(it.format)}</div>` : ""}
-          </div>
-        `).join("");
+        const lis = filtered.map(it => {
+          const title = toTitleCase(it.title);
+          const author = toTitleCase(it.author);
+
+          const authorPart = author ? `by ${escapeHTML(author)}` : "";
+          return `<li><em><strong>${escapeHTML(title)}</strong></em> &nbsp;<span class="books-author">${authorPart}</span></li>`;
+        }).join("");
+
+        grid.innerHTML = `<ul>${lis}</ul>`;
       }
 
       render();
