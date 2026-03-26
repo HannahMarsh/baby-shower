@@ -12,9 +12,10 @@ permalink: /books/
 
 Instead of a card, please bring a children's book and write a message inside the cover :)
 
-We are building Baby Alex’s very first library. To help avoid duplicates, you can see which books have already been chosen below.
+We are building Baby Alex’s very first library. To help avoid duplicates, you can see which books have already been chosen below. (The parents-to-be promise not to look, so your book will still be a surprise!)
 
 If you’d like to add the book you’re bringing, please submit it here:
+
 
 <div class="form-wrapper">
   <iframe 
@@ -42,8 +43,6 @@ If you’d like to add the book you’re bringing, please submit it here:
     d.body.appendChild(s);
   } else { v(); }
 </script>
-
-
 
 
 # Alexander's Library
