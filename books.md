@@ -12,7 +12,7 @@ permalink: /books/
 
 Instead of a card, please bring a children's book and write a message inside the cover :)
 
-We are building Baby Olivia’s very first library. To help avoid duplicates, you can see which books have already been chosen below.
+We are building Baby Alex’s very first library. To help avoid duplicates, you can see which books have already been chosen below.
 
 If you’d like to add the book you’re bringing, please submit it here:
 
@@ -46,7 +46,7 @@ If you’d like to add the book you’re bringing, please submit it here:
 
 
 
-# Olivia's Library
+# Alexander's Library
 
 After submitting your book, <a href="#" onclick="location.reload(); return false;"><i class="fa-solid fa-arrows-rotate" style="font-size:0.7em; display:inline;"></i> refresh this page</a> until you see it appear below. 
 
