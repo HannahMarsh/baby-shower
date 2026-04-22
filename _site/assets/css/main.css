@@ -5475,7 +5475,7 @@ h2 {
   top: 40%;
   transform: translateY(-50%);
   font-size: 0.8rem;
-  color: #c57aa0; /* your soft pink */
+  color: #3089d1; /* your soft pink */
   pointer-events: none; /* so clicks go to input */
 }
 
@@ -5498,7 +5498,7 @@ input#bookSearch.book-search {
 
 #bookSearch::placeholder {
   font-weight: 700 !important;
-  color: #c57aa0 !important; /* soft pink */
+  color: #64b6fa !important; /* soft pink */
   opacity: 0.55;
 }
 
@@ -5555,7 +5555,7 @@ input#bookSearch.book-search {
   border-radius: 999px;
   font-size: 0.85rem;
   background: rgba(255, 105, 180, 0.1);
-  color: rgba(180, 40, 120, 0.95);
+  color: #3089d1;
   border: 1px solid rgba(255, 105, 180, 0.18);
 }
 
