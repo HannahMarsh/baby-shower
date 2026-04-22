@@ -98,6 +98,21 @@
 
 <!-- Optional but recommended -->
 <meta name="twitter:card" content="summary_large_image">
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const currentPath = window.location.pathname.replace(/\/$/, "") || "/";
+  const navLinks = document.querySelectorAll(".greedy-nav a");
+
+  navLinks.forEach(link => {
+    const linkPath = new URL(link.href, window.location.origin).pathname.replace(/\/$/, "") || "/";
+
+    if (linkPath === currentPath) {
+      link.classList.add("nav-current");
+    }
+  });
+});
+</script>
   </head>
 
   <body class="layout--splash">
@@ -213,6 +228,8 @@
   color: #838383;
   font-size: 0.95em;
 }
+
+
 </style>
 
 <h1 id="celebrating-baby-alexander-">Celebrating Baby Alexander ♡</h1>

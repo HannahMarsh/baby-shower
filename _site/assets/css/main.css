@@ -5400,6 +5400,22 @@ body {
   padding: 0.25rem 0.75rem !important;
 }
 
+.greedy-nav a.nav-current:not(.site-title) {
+  position: relative;
+}
+
+.greedy-nav a.nav-current:not(.site-title)::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 1.5px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 4px;
+  background: rgba(48, 137, 209, 0.7);
+  border-radius: 999px;
+}
+
 .qr-code {
   box-shadow: none;
 }

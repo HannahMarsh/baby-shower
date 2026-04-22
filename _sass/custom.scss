@@ -191,6 +191,34 @@ body {
   padding: 0.25rem 0.75rem !important;
 }
 
+
+// .greedy-nav a.nav-current:not(.site-title) {
+//   box-shadow: inset 0 -1px 0 rgba($accent-color, 0.7);
+// }
+
+.greedy-nav a.nav-current:not(.site-title) {
+  position: relative;
+}
+
+.greedy-nav a.nav-current:not(.site-title)::after {
+  content: "";
+  position: absolute;
+
+  width: 70%;                  // 👈 smaller horizontally
+  height: 1.5px;
+
+  left: 50%;
+  transform: translateX(-50%); // 👈 center it
+
+  bottom: 4px;                 // 👈 move UP (increase this to move higher)
+
+  background: rgba($accent-color, 0.7);
+  border-radius: 999px;
+}
+
+
+
+
 .qr-code {
   box-shadow: none;
   
