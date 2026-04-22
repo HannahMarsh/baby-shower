@@ -309,8 +309,8 @@ input#bookSearch.book-search {
 }
 
 .book-search:focus {
-  border-color: rgba(255,105,180,0.5);
-  box-shadow: 0 0 0 4px rgba(255,105,180,0.12);
+  border-color: rgba($accent-color, 0.5);
+  box-shadow: 0 0 0 4px rgba($btn-color, 0.1);
 }
 
 .books-meta {
