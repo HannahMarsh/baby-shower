@@ -61,7 +61,7 @@ Join us as we shower Hannah and Jeffrey with love in anticipation of their baby 
   <div class="detail-row">
     <span class="detail-icon"><i class="fa-solid fa-location-dot"></i></span>
     <span class="detail-text">
-      Events at the Millyard<br>
+      Fratello's - Events in the Millyard<br>
       <span class="address">155 Dow Street, Manchester, NH</span>
     </span>
   </div>

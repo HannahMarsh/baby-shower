@@ -15,7 +15,7 @@ Your presence at our shower is the greatest gift, but if you’d like to contrib
 <!-- <img src="/assets/images/babylist-qr.png" alt="Babylist registry QR code" style="max-width: 150px;"> -->
 
 <a class="qr-code" href="https://my.babylist.com/rtyaqfbjz" target="_blank" rel="noopener">
-  <img src="/assets/images/babylist-qr.png" alt="Babylist registry QR code" style="max-width:150px;">
+  <img src="/assets/images/qr-blue.png" alt="Babylist registry QR code" style="max-width:150px;">
 </a>
 
 

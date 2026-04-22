@@ -101,7 +101,11 @@ body {
 
 .site-title,
 .greedy-nav a {
-  color: #d46a9e !important;  // soft baby pink
+  color: $accent-color !important;  // soft baby pink
+}
+
+.btn--primary {
+  background-color: $btn-color !important;
 }
 
 .site-title {

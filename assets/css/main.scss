@@ -7,14 +7,17 @@ $sans-serif-narrow: "Playfair Display", serif;
 $header-font-family: 'Josefin Sans', sans-serif;
 $global-font-family: 'Glacial Indifference', sans-serif;
 
+$accent-color: #3089d1;
+$btn-color: #64b6fa;
+
 $border-color: transparent;
 $background-color: #faf8f6;
 $masthead-background-color: transparent;
 $footer-background-color: transparent;
-$link-color: #d46a9e;
-$masthead-link-color: #d46a9e;
-$masthead-link-color-hover: #d46a9e;
-$primary-color: #d46a9e;
+$link-color: $accent-color;
+$masthead-link-color: $accent-color;
+$masthead-link-color-hover: $accent-color;
+$primary-color: $accent-color;
 
 @import "minimal-mistakes";
 @import "custom";
