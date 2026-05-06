@@ -45,7 +45,7 @@ permalink: /
 
 
 
-# Celebrating Baby Alexander ♡
+# You're Invited!
 
 Join us as we shower Hannah and Jeffrey with love in anticipation of their baby boy’s arrival!
 

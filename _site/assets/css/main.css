@@ -5342,7 +5342,6 @@ body {
   font-weight: normal;
   letter-spacing: 0.02em;
   -webkit-font-smoothing: antialiased;
-  padding-left: 1em;
 }
 
 .greedy-nav .hidden-links a {
@@ -5360,62 +5359,75 @@ body {
   display: none !important;
 }
 
-/* Allow wrapping into multiple rows */
+.greedy-nav .hidden-links::before,
+.greedy-nav .hidden-links::after,
+.greedy-nav ul.hidden-links.hidden::before,
+.greedy-nav ul.hidden-links.hidden::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Title row + nav row */
 .greedy-nav {
   display: flex !important;
   flex-wrap: wrap !important;
   align-items: flex-start !important;
   background: transparent !important;
+  /* side buffer for the whole nav */
+  box-sizing: border-box !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
-/* Row 1: Title takes full width (forces its own line) */
+/* Row 1: Title takes full width */
 .greedy-nav .site-title {
   order: 1 !important;
   flex: 0 0 100% !important;
   margin-bottom: 1.5rem !important;
+  text-align: left !important;
 }
 
+/* Row 2: Centered nav links */
 .greedy-nav ul.visible-links,
 .greedy-nav ul.hidden-links,
 .greedy-nav ul.hidden-links.hidden {
   order: 2 !important;
-  flex: 0 0 100% !important; /* take full row width */
+  flex: 0 1 450px !important;
   width: 100% !important;
+  max-width: 450px !important;
+  box-sizing: border-box !important;
   display: flex !important;
-  flex-wrap: wrap !important;
-  justify-content: center !important; /* now this works */
-  /* neutralize dropdown styling */
+  flex-wrap: nowrap !important;
+  justify-content: space-between !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  list-style: none !important;
   position: static !important;
   background: transparent !important;
   border: 0 !important;
   box-shadow: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
   visibility: visible !important;
   opacity: 1 !important;
   height: auto !important;
   overflow: visible !important;
 }
 
-.greedy-nav ul.visible-links, .greedy-nav ul.hidden-links, .greedy-nav ul.hidden-links.hidden {
-  visibility: hidden !important;
-}
-
-/* Some theme rules hide li/a instead of the ul */
+/* Make hidden-links behave like regular nav items */
 .greedy-nav ul.hidden-links.hidden > li,
 .greedy-nav ul.hidden-links.hidden a {
   display: inline-flex !important;
-  visibility: visible;
+  visibility: visible !important;
 }
 
-/* Make spacing consistent */
+/* Link spacing */
 .greedy-nav .visible-links a,
 .greedy-nav .hidden-links a {
-  padding: 0.25rem 0.75rem !important;
+  padding: 0.25rem 0 !important;
+  white-space: nowrap !important;
 }
 
 .masthead__inner-wrap {
-  padding: 0px;
+  padding: 0 !important;
 }
 
 .greedy-nav a.nav-current:not(.site-title) {
@@ -5425,7 +5437,7 @@ body {
 .greedy-nav a.nav-current:not(.site-title)::after {
   content: "";
   position: absolute;
-  width: 70%;
+  width: 80%;
   height: 1.5px;
   left: 50%;
   transform: translateX(-50%);
