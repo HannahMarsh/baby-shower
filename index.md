@@ -44,7 +44,8 @@ permalink: /
 </style>
 
 
-<!-- <h1 style="color: #9c6c4f;">You're Invited!</h1> -->
+<h1 style="color: #9c6c4f;">You're Invited!</h1>
+
 <!-- # You're Invited! -->
 
 <!-- <p style="color: #9c6c4f;">You're Invited!</p> -->
