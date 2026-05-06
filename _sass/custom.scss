@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @font-face {
   font-family: 'Priestacy';
   src: url('/assets/fonts/Priestacy.otf') format('opentype');
@@ -97,6 +100,14 @@
 
 body {
   // font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.015em;
+}
+
+.page__content p,
+.page__content li,
+.page__content dl {
+  font-size: 0.975em;
 }
 
 .site-title,
@@ -115,10 +126,11 @@ body {
   font-weight: normal;
   letter-spacing: 0.02em;
   -webkit-font-smoothing: antialiased;
+  padding-left: 1em;
 }
 
-.greedy-nav a {
-  font-size: 1.0rem;
+.greedy-nav .hidden-links a {
+  font-size: 0.95em;
 }
 
 .masthead {
@@ -159,7 +171,7 @@ body {
 
   display: flex !important;
   flex-wrap: wrap !important;
-  justify-content: flex-end !important;  /* now this works */
+  justify-content: center !important;  /* now this works */
 
   /* neutralize dropdown styling */
   position: static !important;
@@ -189,6 +201,10 @@ body {
 .greedy-nav .visible-links a,
 .greedy-nav .hidden-links a {
   padding: 0.25rem 0.75rem !important;
+}
+
+.masthead__inner-wrap {
+  padding: 0px;
 }
 
 
@@ -230,7 +246,8 @@ body {
 }
 
 .btn {
-  font-family: 'Josefin Sans', sans-serif;
+  // font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Lora', serif;
   font-size: small;
 }
 
@@ -323,7 +340,7 @@ h2 {
   background: rgba(255,255,255,0.55);
   font-size: 17px;
   outline: none;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 input#bookSearch.book-search {

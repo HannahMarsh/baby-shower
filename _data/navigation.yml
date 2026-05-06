@@ -1,11 +1,11 @@
 main:
-  - title: "Details"
+  - title: "DETAILS"
     url: /
-  - title: "Registry"
+  - title: "REGISTRY"
     url: /registry/
   - title: "RSVP"
     url: /rsvp/
-  - title: "Books"
+  - title: "BOOKS"
     url: /books/
   - title: "FAQ"
     url: /faq/
